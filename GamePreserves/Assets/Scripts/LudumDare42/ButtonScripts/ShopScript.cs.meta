@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 0f914aab636780b40b5d8a5a417543dd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - defaultGun: {fileID: 1937357842243612, guid: 26629bbf8ac5bec44a3ca41a58c617c5,
+      type: 2}
+  - shotgunGun: {fileID: 1953541210284102, guid: ff9486eae5a0f1a4a8db4de63a9e3fc1,
+      type: 2}
+  - sniperGun: {fileID: 1375714088551110, guid: 25ef4cf7b1b23764bbce6897e5edda63,
+      type: 2}
+  - globeGun: {fileID: 1194489091319950, guid: 7f0b132efa3df2944868e72214761fcb, type: 2}
+  - currentGun: {instanceID: 0}
+  - Roomba: {fileID: 1743088027906648, guid: 0b27034d8dc5cbe47a006b4412aad20c, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

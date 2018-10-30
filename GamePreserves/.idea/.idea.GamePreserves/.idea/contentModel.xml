@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\rimcn\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rimcn\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_GamePreserves.1693443796.00" t="ExcludeRecursive" />
+    <e p="D:\Unity\GamePreserves\GamePreserves" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="InkDialoger" t="Include">
+          <e p="DialogueEngine.cs" t="Include" />
+        </e>
+        <e p="Menu-UIGUI" t="Include">
+          <e p="BGSpawner.cs" t="Include" />
+          <e p="StartMenuDriver.cs" t="Include" />
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Ink" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Compiler" t="Include">
+                <e p="Auto Compiler" t="Include">
+                  <e p="InkPostProcessor.cs" t="Include" />
+                </e>
+                <e p="InkCompiler.cs" t="Include" />
+              </e>
+              <e p="Ink Inspector" t="Include">
+                <e p="File Icons" t="Include">
+                  <e p="InkBrowserIcons.cs" t="Include" />
+                </e>
+                <e p="Ink Inspector" t="Include">
+                  <e p="DefaultAssetEditor.cs" t="Include" />
+                  <e p="DefaultAssetInspector.cs" t="Include" />
+                  <e p="InkInspector.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Ink Library" t="Include">
+                <e p="InkFile.cs" t="Include" />
+                <e p="InkLibrary.cs" t="Include" />
+                <e p="InkLibraryEditor.cs" t="Include" />
+                <e p="InkMetaFile.cs" t="Include" />
+                <e p="InkMetaLibrary.cs" t="Include" />
+              </e>
+              <e p="Ink Settings" t="Include">
+                <e p="InkSettings.cs" t="Include" />
+                <e p="InkSettingsEditor.cs" t="Include" />
+              </e>
+              <e p="Player Window" t="Include">
+                <e p="InkPlayerWindow.cs" t="Include" />
+              </e>
+              <e p="Resources" t="Include">
+                <e p="InkDefaultTemplate.txt" t="Include" />
+              </e>
+              <e p="Tools" t="Include">
+                <e p="InkEditorUtils.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Example" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="BasicInkExample.cs" t="Include" />
+              </e>
+            </e>
+            <e p="InkRuntime" t="Include">
+              <e p="CallStack.cs" t="Include" />
+              <e p="Choice.cs" t="Include" />
+              <e p="ChoicePoint.cs" t="Include" />
+              <e p="Container.cs" t="Include" />
+              <e p="ControlCommand.cs" t="Include" />
+              <e p="DebugMetadata.cs" t="Include" />
+              <e p="Divert.cs" t="Include" />
+              <e p="Glue.cs" t="Include" />
+              <e p="INamedContent.cs" t="Include" />
+              <e p="InkList.cs" t="Include" />
+              <e p="JsonSerialisation.cs" t="Include" />
+              <e p="ListDefinition.cs" t="Include" />
+              <e p="ListDefinitionsOrigin.cs" t="Include" />
+              <e p="NativeFunctionCall.cs" t="Include" />
+              <e p="Object.cs" t="Include" />
+              <e p="Path.cs" t="Include" />
+              <e p="Pointer.cs" t="Include" />
+              <e p="Profiler.cs" t="Include" />
+              <e p="PushPop.cs" t="Include" />
+              <e p="SearchResult.cs" t="Include" />
+              <e p="SimpleJson.cs" t="Include" />
+              <e p="Story.cs" t="Include" />
+              <e p="StoryException.cs" t="Include" />
+              <e p="StoryState.cs" t="Include" />
+              <e p="StringJoinExtension.cs" t="Include" />
+              <e p="Tag.cs" t="Include" />
+              <e p="Value.cs" t="Include" />
+              <e p="VariableAssignment.cs" t="Include" />
+              <e p="VariableReference.cs" t="Include" />
+              <e p="VariablesState.cs" t="Include" />
+              <e p="Void.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="LudumDare42" t="Include">
+            <e p="BaseGunScript.cs" t="Include" />
+            <e p="BulletScript.cs" t="Include" />
+            <e p="ButtonScripts" t="Include">
+              <e p="ShopScript.cs" t="Include" />
+            </e>
+            <e p="CleanerFieldGun.cs" t="Include" />
+            <e p="CleanerRay.cs" t="Include" />
+            <e p="CleanerScript.cs" t="Include" />
+            <e p="EnemySpawner.cs" t="Include" />
+            <e p="GameStatusScript.cs" t="Include" />
+            <e p="GlobeGunScript.cs" t="Include" />
+            <e p="GooScript.cs" t="Include" />
+            <e p="HealthGUIScript.cs" t="Include" />
+            <e p="IGun.cs" t="Include" />
+            <e p="LaserBlastScript.cs" t="Include" />
+            <e p="MapColorScript.cs" t="Include" />
+            <e p="Movement" t="Include">
+              <e p="EnemyTopDownMovement.cs" t="Include" />
+              <e p="PlayerTopDownMovement.cs" t="Include" />
+              <e p="TopDownMovement.cs" t="Include" />
+            </e>
+            <e p="PlayerStatus.cs" t="Include" />
+            <e p="ScoreScript.cs" t="Include" />
+            <e p="ShotgunGunScript.cs" t="Include" />
+            <e p="SniperGunScript.cs" t="Include" />
+            <e p="WatchMouse.cs" t="Include" />
+          </e>
+          <e p="STLArcadeJam2018" t="Include">
+            <e p="AllyMovementScript.cs" t="Include" />
+            <e p="DangerZoneScript.cs" t="Include" />
+            <e p="DishRotationScript.cs" t="Include" />
+            <e p="EventManager.cs" t="Include" />
+            <e p="GameStatusScript.cs" t="Include" />
+            <e p="LineScript.cs" t="Include" />
+            <e p="PlayerActionScript.cs" t="Include" />
+            <e p="PlayerMovementScript.cs" t="Include" />
+            <e p="RandomMovementScript.cs" t="Include" />
+            <e p="SafeZoneScript.cs" t="Include" />
+            <e p="WanderTowardTargetScript.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GamePreserves.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
