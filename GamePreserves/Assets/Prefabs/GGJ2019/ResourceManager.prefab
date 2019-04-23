@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5439441724146271724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5439441724146271722}
+  - component: {fileID: 5439441724146271723}
+  m_Layer: 0
+  m_Name: ResourceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5439441724146271722
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439441724146271724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5439441724146271723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5439441724146271724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c6698a635a6ab4abbbe7abd06ea99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resources:
+  - {fileID: 2945425287746285044, guid: 588749bb6da97054583ffadd0a19d664, type: 3}
+  - {fileID: 5473179484579554050, guid: 90fe39a3fab606e4bbd8f6b232ff0eaf, type: 3}
+  - {fileID: 6794585158087255170, guid: f77885908f682044ba9c6fa4f84c9cfc, type: 3}
+  - {fileID: 1000293833712743319, guid: 76220ec623dda534ba5563fb9d09427e, type: 3}
+  - {fileID: 6765091351291641250, guid: 939852a8142b3c0499d169f9c8e6b51b, type: 3}
+  - {fileID: 1259755014066620360, guid: aea656067c71cc7428482df628bd8a61, type: 3}
+  seed: {fileID: 4144171560505321271, guid: 58f749d1e82bd0746a5be135802067e7, type: 3}
+  tree: {fileID: 576638584467804864, guid: 35f6290af9556804b8ad2371af8c14e9, type: 3}
+  startingResources: 15
+  MinX: 0
+  MaxX: 10
+  MinY: 0
+  MaxY: 10
+  MinZ: 0
+  MaxZ: 10
+  xRange: 5
+  yRange: 5
