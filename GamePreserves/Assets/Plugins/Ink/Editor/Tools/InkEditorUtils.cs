@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Linq;
 using Ink.Runtime;
 using UnityEditor.ProjectWindowCallback;
 using UnityEditor.Callbacks;
@@ -64,14 +65,10 @@ namespace Ink.UnityIntegration {
 
 		[MenuItem("Assets/Recompile Ink", false, 61)]
 		public static void RecompileAll() {
-			List<string> compiledFiles = new List<string>();
-			foreach(InkFile masterInkFile in InkLibrary.FilesCompiledByRecompileAll()) {
-				InkCompiler.CompileInk(masterInkFile);
-				compiledFiles.Add(Path.GetFileName(masterInkFile.filePath));
-			}
-			string logString = compiledFiles.Count == 0 ? 
-				"No valid ink found. Note that only files with 'Compile Automatic' checked are compiled if not set to compile all files automatically in InkSettings file." :
-				"Recompile All will compile "+string.Join(", ", compiledFiles.ToArray());
+			InkCompiler.CompileInk(InkLibrary.FilesCompiledByRecompileAll().ToArray());
+			string logString = InkLibrary.FilesCompiledByRecompileAll().Any() ? 
+				"Recompile All will compile "+string.Join(", ", InkLibrary.FilesCompiledByRecompileAll().Select(x => Path.GetFileName(x.filePath)).ToArray()) :
+				"No valid ink found. Note that only files with 'Compile Automatic' checked are compiled if not set to compile all files automatically in InkSettings file.";
 			Debug.Log(logString);
 		}
 
@@ -119,7 +116,8 @@ namespace Ink.UnityIntegration {
 		[PostProcessBuildAttribute(-1)]
 		public static void OnPostprocessBuild(BuildTarget target, string pathToBuiltProject) {
 			if(!Debug.isDebugBuild) {
-				Debug.Log("<color=blue>Thanks for using ink, and best of luck with your release!\nIf you're doing well, please help fund the project via Patreon https://www.patreon.com/inkle</color>");
+				var color = EditorGUIUtility.isProSkin ? "#3498db" : "blue";
+				Debug.Log("<color="+color+">Thanks for using ink, and best of luck with your release!\nIf you're doing well, please help fund the project via Patreon https://www.patreon.com/inkle</color>");
 			}
 		}
 
@@ -250,22 +248,28 @@ namespace Ink.UnityIntegration {
 		public static void DrawStoryPropertyField (Story story, GUIContent label) {
 			EditorGUILayout.BeginHorizontal();
 			EditorGUILayout.PrefixLabel(label);
-			if(EditorApplication.isPlaying && story != null) {
-				if(InkPlayerWindow.isOpen) {
-					InkPlayerWindow window = InkPlayerWindow.GetWindow(false);
-					if(window.attached && window.story == story) {
-						if(GUILayout.Button("Detach")) {
-							InkPlayerWindow.Detach();
+			if(EditorApplication.isPlaying) {
+				if(story != null) {
+					if(InkPlayerWindow.isOpen) {
+						InkPlayerWindow window = InkPlayerWindow.GetWindow(false);
+						if(window.attached && window.story == story) {
+							if(GUILayout.Button("Detach")) {
+								InkPlayerWindow.Detach();
+							}
+						} else {
+							if(GUILayout.Button("Attach")) {
+								InkPlayerWindow.Attach(story);
+							}
 						}
 					} else {
-						if(GUILayout.Button("Attach")) {
-							InkPlayerWindow.Attach(story);
+						if(GUILayout.Button("Open Player Window")) {
+							InkPlayerWindow.GetWindow();
 						}
 					}
 				} else {
-					if(GUILayout.Button("Open Player Window")) {
-						InkPlayerWindow.GetWindow();
-					}
+					EditorGUI.BeginDisabledGroup(true);
+					GUILayout.Button("Story cannot be null to attach to editor");
+					EditorGUI.EndDisabledGroup();
 				}
 			} else {
 				EditorGUI.BeginDisabledGroup(true);
